@@ -1,0 +1,826 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+	font-family:Arial;
+}
+
+body{
+	overflow:hidden;
+}
+
+#sidebar{
+	width:350px;
+	height:100%;
+	position:fixed;
+	right:0;
+	margin:0;
+	background:#e6e6e6;
+	border-left:2px solid #aeaeae;
+	z-index:10;
+}
+
+#chatbox{
+	position:absolute;
+	bottom:120px;
+	padding:10px;
+	padding-left:30px;
+}
+
+#chatbox span{
+	margin-left:-20px;
+}
+
+#map{
+	min-width:100%;
+	min-height:120%;
+	width:500px;
+	height:500px;
+	cursor:move;
+	z-index:0;
+	position:absolute;
+}
+
+#map{
+	overflow:show;
+}
+/*
+#map img{
+	z-index:-1;
+}
+
+#map .unit img{
+	z-index:0;
+}*/
+
+.room{
+	position:absolute;
+}
+
+#poster{
+	width:330px;
+	position:absolute;
+	bottom:0px;
+	padding: 10px;
+	background:#aeaeae;
+	height:100px
+}
+
+#poster textarea{
+	resize:none;
+	height:100px;
+	width:290px;
+}
+
+#poster button{
+	height:100px;
+	vertical-align:middle;
+	position:absolute;
+	top:10px;
+	right:2px;
+	max-width:50px !important;
+	font-size:0.9em;
+	/*background:rgba(0,0,0,0.2);
+	border:1px solid #e6e6e6;
+	color:#fff;
+	border-radius:5px;
+	cursor:pointer;*/
+}
+
+#poster button span{
+	margin:0 !important;
+	padding:2px !important;
+}
+
+#mapInfo{
+	width:200px;
+	height:20px;
+	position:fixed;
+	right:350px;
+	top:0;
+	text-align:right;
+	padding:0 10px;
+	font-style:italic;
+	color:gray;
+}
+#health{
+	position:fixed;
+	top:0;
+	left:0;
+	padding:10px;
+	padding-left: 20px;
+	z-index:5;
+}
+
+#health label{
+	margin-left:10px;
+}
+
+#self{
+	width:100%;
+	height:24px;
+	text-indent:5px;
+	background:#e6e6e6;
+	display:inline-block;
+	padding-bottom:6px;
+}
+
+#info{
+	height:250px;
+	width:500px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:15px;
+}
+
+#tools{
+	background:#aeaeae;
+	border-top-left-radius: 10px;
+	height:120px;
+	width:100px;
+	position:fixed;
+	right:350px;
+	bottom:0;
+	text-align:center;
+}
+
+#tools input{
+	width: 75px;
+	margin:10px;
+	display:inline-block;
+	text-align:center;
+}
+
+
+.floatRight{
+	float:right;
+	text-align:center;
+	width:384px;
+	position:absolute;
+	right:10px;
+}
+.iconSelector{
+	display:inline-block;
+}
+
+#addUnit{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	border-radius:20px;
+	border:1px solid #aeaeae;
+	position:relative;
+	left: -75px;
+	top:75px;
+	background:#e6e6e6;
+	font-size:1.25em;
+	line-height:30px;
+	cursor:pointer;
+	user-select:none;
+}
+
+#addUnit:active{
+	border-color:#e6e6e6;
+	background:#aeaeae;
+}
+
+progress::-moz-progress-bar {
+	background-color:green;
+}
+
+/* Chrome */
+progress::-webkit-progress-value {
+    background: green;
+}
+
+/* Polyfill */
+progress[aria-valuenow]:before  {
+    background: green;
+}
+
+/* Firefox */
+progress[data-hp^='-']::-moz-progress-bar {
+    background: red;
+}
+
+/* Chrome */
+progress[data-hp^='-']::-webkit-progress-value {
+    background: red;
+}
+
+/* Polyfill */
+progress[data-hp^='-'][aria-valuenow]:before  {
+    background: red;
+}
+
+progress:not([value])::-moz-progress-bar {
+  background: #aeaeae;
+}
+
+/**********************
+TIME FOR ICONS
+/**********************/
+
+.ddicon{
+	background-image:url('http://dwarfs.hekatonstudios.com/online/images/iconset.png');
+	width:24px;
+	height:24px;
+	display:inline-block;
+}
+
+.unit{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	position:absolute;
+	z-index:4;
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid #aeaeae;
+}
+
+.large{
+	width:100px;
+	height:100px;
+}
+
+.colossal{
+	width:150px;
+	height:100px;
+}
+
+.tiny{
+	width:26px;
+	height:26px;
+}
+
+.unit .ddicon{
+	margin:13px 0;
+}
+
+.large .ddicon{
+	margin:26px 0;
+}
+
+.tiny .ddicon{
+	margin:1px;
+}
+
+.colossal .ddicon{
+	margin-top:39px;
+}
+
+.holder .ddicon{
+	position:relative;
+	top:7px;
+}
+
+/********
+Actual icons
+*********/
+
+.icon-0-0{ background-position:0px 0px; }
+.icon-0-1{ background-position:0px -24px; }
+.icon-0-2{ background-position:0px -48px; }
+.icon-0-3{ background-position:0px -72px; }
+.icon-0-4{ background-position:0px -96px; }
+.icon-0-5{ background-position:0px -120px; }
+.icon-0-6{ background-position:0px -144px; }
+.icon-0-7{ background-position:0px -168px; }
+.icon-0-8{ background-position:0px -192px; }
+.icon-0-9{ background-position:0px -216px; }
+.icon-0-10{ background-position:0px -240px; }
+.icon-0-11{ background-position:0px -264px; }
+.icon-0-12{ background-position:0px -288px; }
+.icon-0-13{ background-position:0px -312px; }
+.icon-0-14{ background-position:0px -336px; }
+.icon-0-15{ background-position:0px -360px; }
+.icon-0-16{ background-position:0px -384px; }
+.icon-0-17{ background-position:0px -408px; }
+.icon-0-18{ background-position:0px -432px; }
+.icon-0-19{ background-position:0px -456px; }
+.icon-0-20{ background-position:0px -480px; }
+.icon-0-21{ background-position:0px -504px; }
+.icon-0-22{ background-position:0px -528px; }
+.icon-0-23{ background-position:0px -552px; }
+.icon-0-24{ background-position:0px -576px; }
+.icon-0-25{ background-position:0px -600px; }
+.icon-0-26{ background-position:0px -624px; }
+.icon-0-27{ background-position:0px -648px; }
+.icon-0-28{ background-position:0px -672px; }
+.icon-0-29{ background-position:0px -696px; }
+.icon-0-30{ background-position:0px -720px; }
+.icon-0-31{ background-position:0px -744px; }
+.icon-0-32{ background-position:0px -768px; }
+.icon-0-33{ background-position:0px -792px; }
+.icon-1-0{ background-position:-24px 0px; }
+.icon-1-1{ background-position:-24px -24px; }
+.icon-1-2{ background-position:-24px -48px; }
+.icon-1-3{ background-position:-24px -72px; }
+.icon-1-4{ background-position:-24px -96px; }
+.icon-1-5{ background-position:-24px -120px; }
+.icon-1-6{ background-position:-24px -144px; }
+.icon-1-7{ background-position:-24px -168px; }
+.icon-1-8{ background-position:-24px -192px; }
+.icon-1-9{ background-position:-24px -216px; }
+.icon-1-10{ background-position:-24px -240px; }
+.icon-1-11{ background-position:-24px -264px; }
+.icon-1-12{ background-position:-24px -288px; }
+.icon-1-13{ background-position:-24px -312px; }
+.icon-1-14{ background-position:-24px -336px; }
+.icon-1-15{ background-position:-24px -360px; }
+.icon-1-16{ background-position:-24px -384px; }
+.icon-1-17{ background-position:-24px -408px; }
+.icon-1-18{ background-position:-24px -432px; }
+.icon-1-19{ background-position:-24px -456px; }
+.icon-1-20{ background-position:-24px -480px; }
+.icon-1-21{ background-position:-24px -504px; }
+.icon-1-22{ background-position:-24px -528px; }
+.icon-1-23{ background-position:-24px -552px; }
+.icon-1-24{ background-position:-24px -576px; }
+.icon-1-25{ background-position:-24px -600px; }
+.icon-1-26{ background-position:-24px -624px; }
+.icon-1-27{ background-position:-24px -648px; }
+.icon-1-28{ background-position:-24px -672px; }
+.icon-1-29{ background-position:-24px -696px; }
+.icon-1-30{ background-position:-24px -720px; }
+.icon-1-31{ background-position:-24px -744px; }
+.icon-1-32{ background-position:-24px -768px; }
+.icon-1-33{ background-position:-24px -792px; }
+.icon-2-0{ background-position:-48px 0px; }
+.icon-2-1{ background-position:-48px -24px; }
+.icon-2-2{ background-position:-48px -48px; }
+.icon-2-3{ background-position:-48px -72px; }
+.icon-2-4{ background-position:-48px -96px; }
+.icon-2-5{ background-position:-48px -120px; }
+.icon-2-6{ background-position:-48px -144px; }
+.icon-2-7{ background-position:-48px -168px; }
+.icon-2-8{ background-position:-48px -192px; }
+.icon-2-9{ background-position:-48px -216px; }
+.icon-2-10{ background-position:-48px -240px; }
+.icon-2-11{ background-position:-48px -264px; }
+.icon-2-12{ background-position:-48px -288px; }
+.icon-2-13{ background-position:-48px -312px; }
+.icon-2-14{ background-position:-48px -336px; }
+.icon-2-15{ background-position:-48px -360px; }
+.icon-2-16{ background-position:-48px -384px; }
+.icon-2-17{ background-position:-48px -408px; }
+.icon-2-18{ background-position:-48px -432px; }
+.icon-2-19{ background-position:-48px -456px; }
+.icon-2-20{ background-position:-48px -480px; }
+.icon-2-21{ background-position:-48px -504px; }
+.icon-2-22{ background-position:-48px -528px; }
+.icon-2-23{ background-position:-48px -552px; }
+.icon-2-24{ background-position:-48px -576px; }
+.icon-2-25{ background-position:-48px -600px; }
+.icon-2-26{ background-position:-48px -624px; }
+.icon-2-27{ background-position:-48px -648px; }
+.icon-2-28{ background-position:-48px -672px; }
+.icon-2-29{ background-position:-48px -696px; }
+.icon-2-30{ background-position:-48px -720px; }
+.icon-2-31{ background-position:-48px -744px; }
+.icon-2-32{ background-position:-48px -768px; }
+.icon-2-33{ background-position:-48px -792px; }
+.icon-3-0{ background-position:-72px 0px; }
+.icon-3-1{ background-position:-72px -24px; }
+.icon-3-2{ background-position:-72px -48px; }
+.icon-3-3{ background-position:-72px -72px; }
+.icon-3-4{ background-position:-72px -96px; }
+.icon-3-5{ background-position:-72px -120px; }
+.icon-3-6{ background-position:-72px -144px; }
+.icon-3-7{ background-position:-72px -168px; }
+.icon-3-8{ background-position:-72px -192px; }
+.icon-3-9{ background-position:-72px -216px; }
+.icon-3-10{ background-position:-72px -240px; }
+.icon-3-11{ background-position:-72px -264px; }
+.icon-3-12{ background-position:-72px -288px; }
+.icon-3-13{ background-position:-72px -312px; }
+.icon-3-14{ background-position:-72px -336px; }
+.icon-3-15{ background-position:-72px -360px; }
+.icon-3-16{ background-position:-72px -384px; }
+.icon-3-17{ background-position:-72px -408px; }
+.icon-3-18{ background-position:-72px -432px; }
+.icon-3-19{ background-position:-72px -456px; }
+.icon-3-20{ background-position:-72px -480px; }
+.icon-3-21{ background-position:-72px -504px; }
+.icon-3-22{ background-position:-72px -528px; }
+.icon-3-23{ background-position:-72px -552px; }
+.icon-3-24{ background-position:-72px -576px; }
+.icon-3-25{ background-position:-72px -600px; }
+.icon-3-26{ background-position:-72px -624px; }
+.icon-3-27{ background-position:-72px -648px; }
+.icon-3-28{ background-position:-72px -672px; }
+.icon-3-29{ background-position:-72px -696px; }
+.icon-3-30{ background-position:-72px -720px; }
+.icon-3-31{ background-position:-72px -744px; }
+.icon-3-32{ background-position:-72px -768px; }
+.icon-3-33{ background-position:-72px -792px; }
+.icon-4-0{ background-position:-96px 0px; }
+.icon-4-1{ background-position:-96px -24px; }
+.icon-4-2{ background-position:-96px -48px; }
+.icon-4-3{ background-position:-96px -72px; }
+.icon-4-4{ background-position:-96px -96px; }
+.icon-4-5{ background-position:-96px -120px; }
+.icon-4-6{ background-position:-96px -144px; }
+.icon-4-7{ background-position:-96px -168px; }
+.icon-4-8{ background-position:-96px -192px; }
+.icon-4-9{ background-position:-96px -216px; }
+.icon-4-10{ background-position:-96px -240px; }
+.icon-4-11{ background-position:-96px -264px; }
+.icon-4-12{ background-position:-96px -288px; }
+.icon-4-13{ background-position:-96px -312px; }
+.icon-4-14{ background-position:-96px -336px; }
+.icon-4-15{ background-position:-96px -360px; }
+.icon-4-16{ background-position:-96px -384px; }
+.icon-4-17{ background-position:-96px -408px; }
+.icon-4-18{ background-position:-96px -432px; }
+.icon-4-19{ background-position:-96px -456px; }
+.icon-4-20{ background-position:-96px -480px; }
+.icon-4-21{ background-position:-96px -504px; }
+.icon-4-22{ background-position:-96px -528px; }
+.icon-4-23{ background-position:-96px -552px; }
+.icon-4-24{ background-position:-96px -576px; }
+.icon-4-25{ background-position:-96px -600px; }
+.icon-4-26{ background-position:-96px -624px; }
+.icon-4-27{ background-position:-96px -648px; }
+.icon-4-28{ background-position:-96px -672px; }
+.icon-4-29{ background-position:-96px -696px; }
+.icon-4-30{ background-position:-96px -720px; }
+.icon-4-31{ background-position:-96px -744px; }
+.icon-4-32{ background-position:-96px -768px; }
+.icon-4-33{ background-position:-96px -792px; }
+.icon-5-0{ background-position:-120px 0px; }
+.icon-5-1{ background-position:-120px -24px; }
+.icon-5-2{ background-position:-120px -48px; }
+.icon-5-3{ background-position:-120px -72px; }
+.icon-5-4{ background-position:-120px -96px; }
+.icon-5-5{ background-position:-120px -120px; }
+.icon-5-6{ background-position:-120px -144px; }
+.icon-5-7{ background-position:-120px -168px; }
+.icon-5-8{ background-position:-120px -192px; }
+.icon-5-9{ background-position:-120px -216px; }
+.icon-5-10{ background-position:-120px -240px; }
+.icon-5-11{ background-position:-120px -264px; }
+.icon-5-12{ background-position:-120px -288px; }
+.icon-5-13{ background-position:-120px -312px; }
+.icon-5-14{ background-position:-120px -336px; }
+.icon-5-15{ background-position:-120px -360px; }
+.icon-5-16{ background-position:-120px -384px; }
+.icon-5-17{ background-position:-120px -408px; }
+.icon-5-18{ background-position:-120px -432px; }
+.icon-5-19{ background-position:-120px -456px; }
+.icon-5-20{ background-position:-120px -480px; }
+.icon-5-21{ background-position:-120px -504px; }
+.icon-5-22{ background-position:-120px -528px; }
+.icon-5-23{ background-position:-120px -552px; }
+.icon-5-24{ background-position:-120px -576px; }
+.icon-5-25{ background-position:-120px -600px; }
+.icon-5-26{ background-position:-120px -624px; }
+.icon-5-27{ background-position:-120px -648px; }
+.icon-5-28{ background-position:-120px -672px; }
+.icon-5-29{ background-position:-120px -696px; }
+.icon-5-30{ background-position:-120px -720px; }
+.icon-5-31{ background-position:-120px -744px; }
+.icon-5-32{ background-position:-120px -768px; }
+.icon-5-33{ background-position:-120px -792px; }
+.icon-6-0{ background-position:-144px 0px; }
+.icon-6-1{ background-position:-144px -24px; }
+.icon-6-2{ background-position:-144px -48px; }
+.icon-6-3{ background-position:-144px -72px; }
+.icon-6-4{ background-position:-144px -96px; }
+.icon-6-5{ background-position:-144px -120px; }
+.icon-6-6{ background-position:-144px -144px; }
+.icon-6-7{ background-position:-144px -168px; }
+.icon-6-8{ background-position:-144px -192px; }
+.icon-6-9{ background-position:-144px -216px; }
+.icon-6-10{ background-position:-144px -240px; }
+.icon-6-11{ background-position:-144px -264px; }
+.icon-6-12{ background-position:-144px -288px; }
+.icon-6-13{ background-position:-144px -312px; }
+.icon-6-14{ background-position:-144px -336px; }
+.icon-6-15{ background-position:-144px -360px; }
+.icon-6-16{ background-position:-144px -384px; }
+.icon-6-17{ background-position:-144px -408px; }
+.icon-6-18{ background-position:-144px -432px; }
+.icon-6-19{ background-position:-144px -456px; }
+.icon-6-20{ background-position:-144px -480px; }
+.icon-6-21{ background-position:-144px -504px; }
+.icon-6-22{ background-position:-144px -528px; }
+.icon-6-23{ background-position:-144px -552px; }
+.icon-6-24{ background-position:-144px -576px; }
+.icon-6-25{ background-position:-144px -600px; }
+.icon-6-26{ background-position:-144px -624px; }
+.icon-6-27{ background-position:-144px -648px; }
+.icon-6-28{ background-position:-144px -672px; }
+.icon-6-29{ background-position:-144px -696px; }
+.icon-6-30{ background-position:-144px -720px; }
+.icon-6-31{ background-position:-144px -744px; }
+.icon-6-32{ background-position:-144px -768px; }
+.icon-6-33{ background-position:-144px -792px; }
+.icon-7-0{ background-position:-168px 0px; }
+.icon-7-1{ background-position:-168px -24px; }
+.icon-7-2{ background-position:-168px -48px; }
+.icon-7-3{ background-position:-168px -72px; }
+.icon-7-4{ background-position:-168px -96px; }
+.icon-7-5{ background-position:-168px -120px; }
+.icon-7-6{ background-position:-168px -144px; }
+.icon-7-7{ background-position:-168px -168px; }
+.icon-7-8{ background-position:-168px -192px; }
+.icon-7-9{ background-position:-168px -216px; }
+.icon-7-10{ background-position:-168px -240px; }
+.icon-7-11{ background-position:-168px -264px; }
+.icon-7-12{ background-position:-168px -288px; }
+.icon-7-13{ background-position:-168px -312px; }
+.icon-7-14{ background-position:-168px -336px; }
+.icon-7-15{ background-position:-168px -360px; }
+.icon-7-16{ background-position:-168px -384px; }
+.icon-7-17{ background-position:-168px -408px; }
+.icon-7-18{ background-position:-168px -432px; }
+.icon-7-19{ background-position:-168px -456px; }
+.icon-7-20{ background-position:-168px -480px; }
+.icon-7-21{ background-position:-168px -504px; }
+.icon-7-22{ background-position:-168px -528px; }
+.icon-7-23{ background-position:-168px -552px; }
+.icon-7-24{ background-position:-168px -576px; }
+.icon-7-25{ background-position:-168px -600px; }
+.icon-7-26{ background-position:-168px -624px; }
+.icon-7-27{ background-position:-168px -648px; }
+.icon-7-28{ background-position:-168px -672px; }
+.icon-7-29{ background-position:-168px -696px; }
+.icon-7-30{ background-position:-168px -720px; }
+.icon-7-31{ background-position:-168px -744px; }
+.icon-7-32{ background-position:-168px -768px; }
+.icon-7-33{ background-position:-168px -792px; }
+.icon-8-0{ background-position:-192px 0px; }
+.icon-8-1{ background-position:-192px -24px; }
+.icon-8-2{ background-position:-192px -48px; }
+.icon-8-3{ background-position:-192px -72px; }
+.icon-8-4{ background-position:-192px -96px; }
+.icon-8-5{ background-position:-192px -120px; }
+.icon-8-6{ background-position:-192px -144px; }
+.icon-8-7{ background-position:-192px -168px; }
+.icon-8-8{ background-position:-192px -192px; }
+.icon-8-9{ background-position:-192px -216px; }
+.icon-8-10{ background-position:-192px -240px; }
+.icon-8-11{ background-position:-192px -264px; }
+.icon-8-12{ background-position:-192px -288px; }
+.icon-8-13{ background-position:-192px -312px; }
+.icon-8-14{ background-position:-192px -336px; }
+.icon-8-15{ background-position:-192px -360px; }
+.icon-8-16{ background-position:-192px -384px; }
+.icon-8-17{ background-position:-192px -408px; }
+.icon-8-18{ background-position:-192px -432px; }
+.icon-8-19{ background-position:-192px -456px; }
+.icon-8-20{ background-position:-192px -480px; }
+.icon-8-21{ background-position:-192px -504px; }
+.icon-8-22{ background-position:-192px -528px; }
+.icon-8-23{ background-position:-192px -552px; }
+.icon-8-24{ background-position:-192px -576px; }
+.icon-8-25{ background-position:-192px -600px; }
+.icon-8-26{ background-position:-192px -624px; }
+.icon-8-27{ background-position:-192px -648px; }
+.icon-8-28{ background-position:-192px -672px; }
+.icon-8-29{ background-position:-192px -696px; }
+.icon-8-30{ background-position:-192px -720px; }
+.icon-8-31{ background-position:-192px -744px; }
+.icon-8-32{ background-position:-192px -768px; }
+.icon-8-33{ background-position:-192px -792px; }
+.icon-9-0{ background-position:-216px 0px; }
+.icon-9-1{ background-position:-216px -24px; }
+.icon-9-2{ background-position:-216px -48px; }
+.icon-9-3{ background-position:-216px -72px; }
+.icon-9-4{ background-position:-216px -96px; }
+.icon-9-5{ background-position:-216px -120px; }
+.icon-9-6{ background-position:-216px -144px; }
+.icon-9-7{ background-position:-216px -168px; }
+.icon-9-8{ background-position:-216px -192px; }
+.icon-9-9{ background-position:-216px -216px; }
+.icon-9-10{ background-position:-216px -240px; }
+.icon-9-11{ background-position:-216px -264px; }
+.icon-9-12{ background-position:-216px -288px; }
+.icon-9-13{ background-position:-216px -312px; }
+.icon-9-14{ background-position:-216px -336px; }
+.icon-9-15{ background-position:-216px -360px; }
+.icon-9-16{ background-position:-216px -384px; }
+.icon-9-17{ background-position:-216px -408px; }
+.icon-9-18{ background-position:-216px -432px; }
+.icon-9-19{ background-position:-216px -456px; }
+.icon-9-20{ background-position:-216px -480px; }
+.icon-9-21{ background-position:-216px -504px; }
+.icon-9-22{ background-position:-216px -528px; }
+.icon-9-23{ background-position:-216px -552px; }
+.icon-9-24{ background-position:-216px -576px; }
+.icon-9-25{ background-position:-216px -600px; }
+.icon-9-26{ background-position:-216px -624px; }
+.icon-9-27{ background-position:-216px -648px; }
+.icon-9-28{ background-position:-216px -672px; }
+.icon-9-29{ background-position:-216px -696px; }
+.icon-9-30{ background-position:-216px -720px; }
+.icon-9-31{ background-position:-216px -744px; }
+.icon-9-32{ background-position:-216px -768px; }
+.icon-9-33{ background-position:-216px -792px; }
+.icon-10-0{ background-position:-240px 0px; }
+.icon-10-1{ background-position:-240px -24px; }
+.icon-10-2{ background-position:-240px -48px; }
+.icon-10-3{ background-position:-240px -72px; }
+.icon-10-4{ background-position:-240px -96px; }
+.icon-10-5{ background-position:-240px -120px; }
+.icon-10-6{ background-position:-240px -144px; }
+.icon-10-7{ background-position:-240px -168px; }
+.icon-10-8{ background-position:-240px -192px; }
+.icon-10-9{ background-position:-240px -216px; }
+.icon-10-10{ background-position:-240px -240px; }
+.icon-10-11{ background-position:-240px -264px; }
+.icon-10-12{ background-position:-240px -288px; }
+.icon-10-13{ background-position:-240px -312px; }
+.icon-10-14{ background-position:-240px -336px; }
+.icon-10-15{ background-position:-240px -360px; }
+.icon-10-16{ background-position:-240px -384px; }
+.icon-10-17{ background-position:-240px -408px; }
+.icon-10-18{ background-position:-240px -432px; }
+.icon-10-19{ background-position:-240px -456px; }
+.icon-10-20{ background-position:-240px -480px; }
+.icon-10-21{ background-position:-240px -504px; }
+.icon-10-22{ background-position:-240px -528px; }
+.icon-10-23{ background-position:-240px -552px; }
+.icon-10-24{ background-position:-240px -576px; }
+.icon-10-25{ background-position:-240px -600px; }
+.icon-10-26{ background-position:-240px -624px; }
+.icon-10-27{ background-position:-240px -648px; }
+.icon-10-28{ background-position:-240px -672px; }
+.icon-10-29{ background-position:-240px -696px; }
+.icon-10-30{ background-position:-240px -720px; }
+.icon-10-31{ background-position:-240px -744px; }
+.icon-10-32{ background-position:-240px -768px; }
+.icon-10-33{ background-position:-240px -792px; }
+.icon-11-0{ background-position:-264px 0px; }
+.icon-11-1{ background-position:-264px -24px; }
+.icon-11-2{ background-position:-264px -48px; }
+.icon-11-3{ background-position:-264px -72px; }
+.icon-11-4{ background-position:-264px -96px; }
+.icon-11-5{ background-position:-264px -120px; }
+.icon-11-6{ background-position:-264px -144px; }
+.icon-11-7{ background-position:-264px -168px; }
+.icon-11-8{ background-position:-264px -192px; }
+.icon-11-9{ background-position:-264px -216px; }
+.icon-11-10{ background-position:-264px -240px; }
+.icon-11-11{ background-position:-264px -264px; }
+.icon-11-12{ background-position:-264px -288px; }
+.icon-11-13{ background-position:-264px -312px; }
+.icon-11-14{ background-position:-264px -336px; }
+.icon-11-15{ background-position:-264px -360px; }
+.icon-11-16{ background-position:-264px -384px; }
+.icon-11-17{ background-position:-264px -408px; }
+.icon-11-18{ background-position:-264px -432px; }
+.icon-11-19{ background-position:-264px -456px; }
+.icon-11-20{ background-position:-264px -480px; }
+.icon-11-21{ background-position:-264px -504px; }
+.icon-11-22{ background-position:-264px -528px; }
+.icon-11-23{ background-position:-264px -552px; }
+.icon-11-24{ background-position:-264px -576px; }
+.icon-11-25{ background-position:-264px -600px; }
+.icon-11-26{ background-position:-264px -624px; }
+.icon-11-27{ background-position:-264px -648px; }
+.icon-11-28{ background-position:-264px -672px; }
+.icon-11-29{ background-position:-264px -696px; }
+.icon-11-30{ background-position:-264px -720px; }
+.icon-11-31{ background-position:-264px -744px; }
+.icon-11-32{ background-position:-264px -768px; }
+.icon-11-33{ background-position:-264px -792px; }
+.icon-12-0{ background-position:-288px 0px; }
+.icon-12-1{ background-position:-288px -24px; }
+.icon-12-2{ background-position:-288px -48px; }
+.icon-12-3{ background-position:-288px -72px; }
+.icon-12-4{ background-position:-288px -96px; }
+.icon-12-5{ background-position:-288px -120px; }
+.icon-12-6{ background-position:-288px -144px; }
+.icon-12-7{ background-position:-288px -168px; }
+.icon-12-8{ background-position:-288px -192px; }
+.icon-12-9{ background-position:-288px -216px; }
+.icon-12-10{ background-position:-288px -240px; }
+.icon-12-11{ background-position:-288px -264px; }
+.icon-12-12{ background-position:-288px -288px; }
+.icon-12-13{ background-position:-288px -312px; }
+.icon-12-14{ background-position:-288px -336px; }
+.icon-12-15{ background-position:-288px -360px; }
+.icon-12-16{ background-position:-288px -384px; }
+.icon-12-17{ background-position:-288px -408px; }
+.icon-12-18{ background-position:-288px -432px; }
+.icon-12-19{ background-position:-288px -456px; }
+.icon-12-20{ background-position:-288px -480px; }
+.icon-12-21{ background-position:-288px -504px; }
+.icon-12-22{ background-position:-288px -528px; }
+.icon-12-23{ background-position:-288px -552px; }
+.icon-12-24{ background-position:-288px -576px; }
+.icon-12-25{ background-position:-288px -600px; }
+.icon-12-26{ background-position:-288px -624px; }
+.icon-12-27{ background-position:-288px -648px; }
+.icon-12-28{ background-position:-288px -672px; }
+.icon-12-29{ background-position:-288px -696px; }
+.icon-12-30{ background-position:-288px -720px; }
+.icon-12-31{ background-position:-288px -744px; }
+.icon-12-32{ background-position:-288px -768px; }
+.icon-12-33{ background-position:-288px -792px; }
+.icon-13-0{ background-position:-312px 0px; }
+.icon-13-1{ background-position:-312px -24px; }
+.icon-13-2{ background-position:-312px -48px; }
+.icon-13-3{ background-position:-312px -72px; }
+.icon-13-4{ background-position:-312px -96px; }
+.icon-13-5{ background-position:-312px -120px; }
+.icon-13-6{ background-position:-312px -144px; }
+.icon-13-7{ background-position:-312px -168px; }
+.icon-13-8{ background-position:-312px -192px; }
+.icon-13-9{ background-position:-312px -216px; }
+.icon-13-10{ background-position:-312px -240px; }
+.icon-13-11{ background-position:-312px -264px; }
+.icon-13-12{ background-position:-312px -288px; }
+.icon-13-13{ background-position:-312px -312px; }
+.icon-13-14{ background-position:-312px -336px; }
+.icon-13-15{ background-position:-312px -360px; }
+.icon-13-16{ background-position:-312px -384px; }
+.icon-13-17{ background-position:-312px -408px; }
+.icon-13-18{ background-position:-312px -432px; }
+.icon-13-19{ background-position:-312px -456px; }
+.icon-13-20{ background-position:-312px -480px; }
+.icon-13-21{ background-position:-312px -504px; }
+.icon-13-22{ background-position:-312px -528px; }
+.icon-13-23{ background-position:-312px -552px; }
+.icon-13-24{ background-position:-312px -576px; }
+.icon-13-25{ background-position:-312px -600px; }
+.icon-13-26{ background-position:-312px -624px; }
+.icon-13-27{ background-position:-312px -648px; }
+.icon-13-28{ background-position:-312px -672px; }
+.icon-13-29{ background-position:-312px -696px; }
+.icon-13-30{ background-position:-312px -720px; }
+.icon-13-31{ background-position:-312px -744px; }
+.icon-13-32{ background-position:-312px -768px; }
+.icon-13-33{ background-position:-312px -792px; }
+.icon-14-0{ background-position:-336px 0px; }
+.icon-14-1{ background-position:-336px -24px; }
+.icon-14-2{ background-position:-336px -48px; }
+.icon-14-3{ background-position:-336px -72px; }
+.icon-14-4{ background-position:-336px -96px; }
+.icon-14-5{ background-position:-336px -120px; }
+.icon-14-6{ background-position:-336px -144px; }
+.icon-14-7{ background-position:-336px -168px; }
+.icon-14-8{ background-position:-336px -192px; }
+.icon-14-9{ background-position:-336px -216px; }
+.icon-14-10{ background-position:-336px -240px; }
+.icon-14-11{ background-position:-336px -264px; }
+.icon-14-12{ background-position:-336px -288px; }
+.icon-14-13{ background-position:-336px -312px; }
+.icon-14-14{ background-position:-336px -336px; }
+.icon-14-15{ background-position:-336px -360px; }
+.icon-14-16{ background-position:-336px -384px; }
+.icon-14-17{ background-position:-336px -408px; }
+.icon-14-18{ background-position:-336px -432px; }
+.icon-14-19{ background-position:-336px -456px; }
+.icon-14-20{ background-position:-336px -480px; }
+.icon-14-21{ background-position:-336px -504px; }
+.icon-14-22{ background-position:-336px -528px; }
+.icon-14-23{ background-position:-336px -552px; }
+.icon-14-24{ background-position:-336px -576px; }
+.icon-14-25{ background-position:-336px -600px; }
+.icon-14-26{ background-position:-336px -624px; }
+.icon-14-27{ background-position:-336px -648px; }
+.icon-14-28{ background-position:-336px -672px; }
+.icon-14-29{ background-position:-336px -696px; }
+.icon-14-30{ background-position:-336px -720px; }
+.icon-14-31{ background-position:-336px -744px; }
+.icon-14-32{ background-position:-336px -768px; }
+.icon-14-33{ background-position:-336px -792px; }
+.icon-15-0{ background-position:-360px 0px; }
+.icon-15-1{ background-position:-360px -24px; }
+.icon-15-2{ background-position:-360px -48px; }
+.icon-15-3{ background-position:-360px -72px; }
+.icon-15-4{ background-position:-360px -96px; }
+.icon-15-5{ background-position:-360px -120px; }
+.icon-15-6{ background-position:-360px -144px; }
+.icon-15-7{ background-position:-360px -168px; }
+.icon-15-8{ background-position:-360px -192px; }
+.icon-15-9{ background-position:-360px -216px; }
+.icon-15-10{ background-position:-360px -240px; }
+.icon-15-11{ background-position:-360px -264px; }
+.icon-15-12{ background-position:-360px -288px; }
+.icon-15-13{ background-position:-360px -312px; }
+.icon-15-14{ background-position:-360px -336px; }
+.icon-15-15{ background-position:-360px -360px; }
+.icon-15-16{ background-position:-360px -384px; }
+.icon-15-17{ background-position:-360px -408px; }
+.icon-15-18{ background-position:-360px -432px; }
+.icon-15-19{ background-position:-360px -456px; }
+.icon-15-20{ background-position:-360px -480px; }
+.icon-15-21{ background-position:-360px -504px; }
+.icon-15-22{ background-position:-360px -528px; }
+.icon-15-23{ background-position:-360px -552px; }
+.icon-15-24{ background-position:-360px -576px; }
+.icon-15-25{ background-position:-360px -600px; }
+.icon-15-26{ background-position:-360px -624px; }
+.icon-15-27{ background-position:-360px -648px; }
+.icon-15-28{ background-position:-360px -672px; }
+.icon-15-29{ background-position:-360px -696px; }
+.icon-15-30{ background-position:-360px -720px; }
+.icon-15-31{ background-position:-360px -744px; }
+.icon-15-32{ background-position:-360px -768px; }
+.icon-15-33{ background-position:-360px -792px; }

@@ -1,0 +1,1094 @@
+old icons
+
+
+.shortsword{
+	background-position:-24px -0px;
+}
+
+.longsword{
+	background-position:-48px -0px;
+}
+
+.epee{
+	background-position:-72px -0px;
+}
+
+.spear{
+	background-position:-96px -0px;
+}
+
+.trident{
+	background-position:-120px -0px;
+}
+
+.waraxe{
+	background-position:-144px -0px;
+}
+
+.dagger{
+	background-position:-168px -0px;
+}
+
+.knife{
+	background-position:-192px -0px;
+}
+
+.katana{
+	background-position:-216px -0px;
+}
+
+.saber{
+	background-position:-240px -0px;
+}
+
+.claw{
+	background-position:-264px -0px;
+}
+
+.whip{
+	background-position:-288px -0px;
+}
+
+.nunchuk{
+	background-position:-312px -0px;
+}
+
+.club{
+	background-position:-336px -0px;
+}
+
+.flail{
+	background-position:-360px -0px;
+}
+
+/*******
+Row -2
+********/
+
+.bow{
+	background-position:-0px -24px;
+}
+
+.gun{
+	background-position:-24px -24px;
+}
+
+.scepter{
+	background-position:-48px -24px;
+}
+
+.hammer{
+	background-position:-72px -24px;
+}
+
+.staff{
+	background-position:-96px -24px;
+}
+
+.wand{
+	background-position:-120px -24px;
+}
+
+.slingshot{
+	background-position:-144px -24px;
+}
+
+.boomerang{
+	background-position:-168px -24px;
+}
+
+.crossbow{
+	background-position:-192px -24px;
+}
+
+.shuriken{
+	background-position:-216px -24px;
+}
+
+.greatsword{
+	background-position:-240px -24px;
+}
+
+.check{
+	background-position:-264px -24px;
+}
+
+.deny{
+	background-position:-288px -24px;
+}
+
+.star{
+	background-position:-312px -24px;
+}
+
+.axe{
+	background-position:-336px -24px;
+}
+
+.scythe{
+	background-position:-360px -24px;
+}
+
+/*****
+Row -3
+*****/
+
+.helm{
+	background-position:-0px -48px;
+}
+
+.circlet{
+	background-position:-24px -48px;
+}
+
+.hat{
+	background-position:-48px -48px;
+}
+
+.wizardhat{
+	background-position:-72px -48px;
+}
+
+.hairpin{
+	background-position:-96px -48px;
+}
+
+.headband{
+	background-position:-120px -48px;
+}
+
+.ribbon{
+	background-position:-144px -48px;
+}
+
+.mask{
+	background-position:-168px -48px;
+}
+
+.heavyarmor{
+	background-position:-192px -48px;
+}
+
+.lightarmor{
+	background-position:-216px -48px;
+}
+
+.plate{
+	background-position:-240px -48px;
+}
+
+.robe{
+	background-position:-264px -48px;
+}
+
+.chainmail{
+	background-position:-288px -48px;
+}
+
+.shirt{
+	background-position:-312px -48px;
+}
+
+.cloak{
+	background-position:-336px -48px;
+}
+
+.cape{
+	background-position:-360px -48px;
+}
+
+/*****
+Row -4
+*****/
+
+.shoes{
+	background-position:-0px -72px;
+}
+
+.boots{
+	background-position:-24px -72px;
+}
+
+.gloves{
+	background-position:-48px -72px;
+}
+
+.gauntlet{
+	background-position:-72px -72px;
+}
+
+.shield{
+	background-position:-96px -72px;
+}
+
+.targe{
+	background-position:-120px -72px;
+}
+
+.belt{
+	background-position:-144px -72px;
+}
+
+.cloth{
+	background-position:-168px -72px;
+}
+
+.bracer{
+	background-position:-192px -72px;
+}
+
+.ring{
+	background-position:-216px -72px;
+}
+
+.bracelet{
+	background-position:-240px -72px;
+}
+
+.pendant{
+	background-position:-264px -72px;
+}
+
+.necklace{
+	background-position:-288px -72px;
+}
+
+.earring{
+	background-position:-312px -72px;
+}
+
+.badge{
+	background-position:-336px -72px;
+}
+
+.broach{
+	background-position:-360px -72px;
+}
+
+/*****
+Row -4
+*****/
+
+.healthpotion{
+	background-position:-0px -96px;
+}
+
+.manapotion{
+	background-position:-24px -96px;
+}
+
+.antidote{
+	background-position:-48px -96px;
+}
+
+.poison{
+	background-position:-72px -96px;
+}
+
+.remedy{
+	background-position:-96px -96px;
+}
+
+.vase{
+	background-position:-120px -96px;
+}
+
+.urn{
+	background-position:-144px -96px;
+}
+
+.steamer{
+	background-position:-168px -96px;
+}
+
+.herb{
+	background-position:-192px -96px;
+}
+
+.greens{
+	background-position:-216px -96px;
+}
+
+.clover{
+	background-position:-240px -96px;
+}
+
+.eidelweiss{
+	background-position:-264px -96px;
+}
+
+.daisy{
+	background-position:-288px -96px;
+}
+
+.daffodil{
+	background-position:-312px -96px;
+}
+
+.turnip{
+	background-position:-336px -96px;
+}
+
+.root{
+	background-position:-360px -96px;
+}
+
+/*****
+Row -5
+*****/
+
+.copperkey{
+	background-position:-0px -120px;
+}
+
+.silverkey{
+	background-position:-24px -120px;
+}
+
+.skeletonkey{
+	background-position:-48px -120px;
+}
+
+.goldkey{
+	background-position:-72px -120px;
+}
+
+.platinumkey{
+	background-position:-96px -120px;
+}
+
+.completesigil{
+	background-position:-120px -120px;
+}
+
+.leftsigil{
+	background-position:-144px -120px;
+}
+
+.rightsigil{
+	background-position:-168px -120px;
+}
+
+.lyre{
+	background-position:-192px -120px;
+}
+
+.sitar{
+	background-position:-216px -120px;
+}
+
+.ocarina{
+	background-position:-240px -120px;
+}
+
+.flute{
+	background-position:-264px -120px;
+}
+
+.horn{
+	background-position:-288px -120px;
+}
+
+.drum{
+	background-position:-312px -120px;
+}
+
+.bell{
+	background-position:-336px -120px;
+}
+
+.musicbox{
+	background-position:-360px -120px;
+}
+
+/*****
+Row -7
+*****/
+
+.iwhite{
+	background-position:-0px -144px;
+}
+
+.iblack{
+	background-position:-24px -144px;
+}
+
+.igray{
+	background-position:-48px -144px;
+}
+
+.ired{
+	background-position:-72px -144px;
+}
+
+.iblue{
+	background-position:-96px -144px;
+}
+
+.igreen{
+	background-position:-120px -144px;
+}
+
+.iyellow{
+	background-position:-144px -144px;
+}
+
+.ipurple{
+	background-position:-168px -144px;
+}
+
+.fire{
+	background-position:-192px -144px;
+}
+
+.ice{
+	background-position:-216px -144px;
+}
+
+.thunder{
+	background-position:-240px -144px;
+}
+
+.water{
+	background-position:-264px -144px;
+}
+
+.earth{
+	background-position:-288px -144px;
+}
+
+.wind{
+	background-position:-312px -144px;
+}
+
+.light{
+	background-position:-336px -144px;
+}
+
+.dark{
+	background-position:-360px -144px;
+}
+
+/*****
+Row -8
+*****/
+
+.death{
+	background-position:-0px -168px;
+}
+
+.poisoned{
+	background-position:-24px -168px;
+}
+
+.blind{
+	background-position:-48px -168px;
+}
+
+.silence{
+	background-position:-72px -168px;
+}
+
+.stun{
+	background-position:-96px -168px;
+}
+
+.sleep{
+	background-position:-120px -168px;
+}
+
+.berserk{
+	background-position:-144px -168px;
+}
+
+.blight{
+	background-position:-168px -168px;
+}
+
+.atkup{
+	background-position:-192px -168px;
+}
+
+.defup{
+	background-position:-216px -168px;
+}
+
+.spiup{
+	background-position:-240px -168px;
+}
+
+.agiup{
+	background-position:-264px -168px;
+}
+
+.atkdown{
+	background-position:-288px -168px;
+}
+
+.defdown{
+	background-position:-312px -168px;
+}
+
+.spidown{
+	background-position:-336px -168px;
+}
+
+.agidown{
+	background-position:-360px -168px;
+}
+
+/*****
+Row -9
+*****/
+
+.aura{
+	background-position:-0px -192px;
+}
+
+.awakened{
+	background-position:-24px -192px;
+}
+
+.enlightened{
+	background-position:-48px -192px;
+}
+
+.enchanted{
+	background-position:-72px -192px;
+}
+
+.strengthened{
+	background-position:-96px -192px;
+}
+
+.wisened{
+	background-position:-120px -192px;
+}
+
+.bardsong{
+	background-position:-144px -192px;
+}
+
+.critical{
+	background-position:-168px -192px;
+}
+
+.botch{
+	background-position:-192px -192px;
+}
+
+.soul{
+	background-position:-216px -192px;
+}
+
+.book{
+	background-position:-312px -192px;
+}
+
+.statup{
+	background-position:-336px -192px;
+}
+
+.statdown{
+	background-position:-360px -192px;
+}
+
+/*****
+Row -10
+*****/
+
+.bag{
+	background-position:-0px -216px;
+}
+
+.card{
+	background-position:-24px -216px;
+}
+
+.stone{
+	background-position:-48px -216px;
+}
+
+.wallet{
+	background-position:-72px -216px;
+}
+
+.envelope{
+	background-position:-96px -216px;
+}
+
+.letter{
+	background-position:-120px -216px;
+}
+
+.scroll{
+	background-position:-144px -216px;
+}
+
+.parcel{
+	background-position:-168px -216px;
+}
+
+.gift{
+	background-position:-192px -216px;
+}
+
+.imap{
+	background-position:-216px -216px;
+}
+
+.tablet{
+	background-position:-240px -216px;
+}
+
+.inote{
+	background-position:-264px -216px;
+}
+
+.mirror{
+	background-position:-288px -216px;
+}
+
+.skull{
+	background-position:-312px -216px;
+}
+
+.bluefeather{
+	background-position:-336px -216px;
+}
+
+.redfeather{
+	background-position:-360px -216px;
+}
+
+/*****
+Row -11
+*****/
+
+.carrot{
+	background-position:-0px -240px;
+}
+
+.onion{
+	background-position:-24px -240px;
+}
+
+.potato{
+	background-position:-48px -240px;
+}
+
+.meat{
+	background-position:-72px -240px;
+}
+
+.fish{
+	background-position:-96px -240px;
+}
+
+.mushroom{
+	background-position:-120px -240px;
+}
+
+.nut{
+	background-position:-144px -240px;
+}
+
+.orange{
+	background-position:-168px -240px;
+}
+
+.grape{
+	background-position:-192px -240px;
+}
+
+.apple{
+	background-position:-216px -240px;
+}
+
+.bread{
+	background-position:-240px -240px;
+}
+
+.egg{
+	background-position:-264px -240px;
+}
+
+.cheese{
+	background-position:-288px -240px;
+}
+
+.spice{
+	background-position:-312px -240px;
+}
+
+.flour{
+	background-position:-336px -240px;
+}
+
+.ketchup{
+	background-position:-360px -240px;
+}
+
+/*****
+Row -12
+*****/
+
+.redtome{
+	background-position:-0px -264px;
+}
+
+.blacktome{
+	background-position:-24px -264px;
+}
+
+.notebook{
+	background-position:-48px -264px;
+}
+
+.oldletter{
+	background-position:-72px -264px;
+}
+
+.lamp{
+	background-position:-96px -264px;
+}
+
+.torch{
+	background-position:-120px -264px;
+}
+
+.candle{
+	background-position:-144px -264px;
+}
+
+.rope{
+	background-position:-168px -264px;
+}
+
+.pickaxe{
+	background-position:-192px -264px;
+}
+
+.shovel{
+	background-position:-216px -264px;
+}
+
+.bomb{
+	background-position:-240px -264px;
+}
+
+.mortar{
+	background-position:-264px -264px;
+}
+
+.hourglass{
+	background-position:-288px -264px;
+}
+
+.cross{
+	background-position:-312px -264px;
+}
+
+.water{
+	background-position:-336px -264px;
+}
+
+.ink{
+	background-position:-360px -264px;
+}
+
+/*****
+Row -13
+*****/
+
+.woodenlog{
+	background-position:-0px -288px;
+}
+
+.paperroll{
+	background-position:-24px -288px;
+}
+
+.gold{
+	background-position:-48px -288px;
+}
+
+.leather{
+	background-position:-72px -288px;
+}
+
+.rathianplate{
+	background-position:-96px -288px;
+}
+
+.twistedhorn{
+	background-position:-120px -288px;
+}
+
+.oneup{
+	background-position:-144px -288px;
+}
+
+.chronotrigger{
+	background-position:-168px -288px;
+}
+
+.ruby{
+	background-position:-192px -288px;
+}
+
+.pearl{
+	background-position:-216px -288px;
+}
+
+.crystal{
+	background-position:-240px -288px;
+}
+
+.jade{
+	background-position:-264px -288px;
+}
+
+.amethyst{
+	background-position:-288px -288px;
+}
+
+.dubloon{
+	background-position:-312px -288px;
+}
+
+.coral{
+	background-position:-336px -288px;
+}
+
+.sand{
+	background-position:-360px -288px;
+}
+
+/*****
+Row -14
+*****/
+
+.redseer{
+	background-position:-0px -312px;
+}
+
+.blueseer{
+	background-position:-24px -312px;
+}
+
+.greenseer{
+	background-position:-48px -312px;
+}
+
+.yellowseer{
+	background-position:-72px -312px;
+}
+
+.purpleseer{
+	background-position:-96px -312px;
+}
+
+.blackseer{
+	background-position:-120px -312px;
+}
+
+.berries{
+	background-position:-144px -312px;
+}
+
+.cherry{
+	background-position:-168px -312px;
+}
+
+.iaura{
+	background-position:-192px -312px;
+}
+
+.iawakened{
+	background-position:-216px -312px;
+}
+
+.ienlightened{
+	background-position:-240px -312px;
+}
+
+.ienchanted{
+	background-position:-264px -312px;
+}
+
+.istrengthened{
+	background-position:-288px -312px;
+}
+
+.iwisened{
+	background-position:-312px -312px;
+}
+
+.ibardsong{
+	background-position:-336px -312px;
+}
+
+.isigil{
+	background-position:-360px -312px;
+}
+
+/*Fuck Rows -15,16,17 and -18... well, a few things maybe*/
+
+
+.mageblue{
+	background-position:-0px -408px;
+}
+
+.magered{
+	background-position:-24px -408px;
+}
+
+.mageblack{
+	background-position:-48px -408px;
+}
+
+.faggotcolormage{
+	background-position:-72px -408px;
+}
+
+/*****
+Portraits
+*****/
+.p1{ background-position:-24px -552px; }
+.p2{ background-position:-48px -552px; }
+.p3{ background-position:-72px -552px; }
+.p4{ background-position:-96px -552px; }
+.p5{ background-position:-120px -552px; }
+.p6{ background-position:-144px -552px; }
+.p7{ background-position:-168px -552px; }
+.p8{ background-position:-192px -552px; }
+.p9{ background-position:-216px -552px; }
+.p10{ background-position:-240px -552px; }
+.p11{ background-position:-264px -552px; }
+.p12{ background-position:-288px -552px; }
+.p13{ background-position:-312px -552px; }
+.p14{ background-position:-336px -552px; }
+.p15{ background-position:-360px -552px; }
+.p16{ background-position:-24px -576px; }
+.p17{ background-position:-48px -576px; }
+.p18{ background-position:-72px -576px; }
+.p19{ background-position:-96px -576px; }
+.p20{ background-position:-120px -576px; }
+.p21{ background-position:-144px -576px; }
+.p22{ background-position:-168px -576px; }
+.p23{ background-position:-192px -576px; }
+.p24{ background-position:-216px -576px; }
+.p25{ background-position:-240px -576px; }
+.p26{ background-position:-264px -576px; }
+.p27{ background-position:-288px -576px; }
+.p28{ background-position:-312px -576px; }
+.p29{ background-position:-336px -576px; }
+.p30{ background-position:-360px -576px; }
+.p31{ background-position:-24px -600px; }
+.p32{ background-position:-48px -600px; }
+.p33{ background-position:-72px -600px; }
+.p34{ background-position:-96px -600px; }
+.p35{ background-position:-120px -600px; }
+.p36{ background-position:-144px -600px; }
+.p37{ background-position:-168px -600px; }
+.p38{ background-position:-192px -600px; }
+.p39{ background-position:-216px -600px; }
+.p40{ background-position:-240px -600px; }
+.p41{ background-position:-264px -600px; }
+.p42{ background-position:-288px -600px; }
+.p43{ background-position:-312px -600px; }
+.p44{ background-position:-336px -600px; }
+.p45{ background-position:-360px -600px; }
+.p46{ background-position:-24px -624px; }
+.p47{ background-position:-48px -624px; }
+.p48{ background-position:-72px -624px; }
+.p49{ background-position:-96px -624px; }
+.p50{ background-position:-120px -624px; }
+.p51{ background-position:-144px -624px; }
+.p52{ background-position:-168px -624px; }
+.p53{ background-position:-192px -624px; }
+.p54{ background-position:-216px -624px; }
+.p55{ background-position:-240px -624px; }
+.p56{ background-position:-264px -624px; }
+.p57{ background-position:-288px -624px; }
+.p58{ background-position:-312px -624px; }
+.p59{ background-position:-336px -624px; }
+.p60{ background-position:-360px -624px; }
+.p61{ background-position:-24px -648px; }
+.p62{ background-position:-48px -648px; }
+.p63{ background-position:-72px -648px; }
+.p64{ background-position:-96px -648px; }
+.p65{ background-position:-120px -648px; }
+.p66{ background-position:-144px -648px; }
+.p67{ background-position:-168px -648px; }
+.p68{ background-position:-192px -648px; }
+.p69{ background-position:-216px -648px; }
+.p70{ background-position:-240px -648px; }
+.p71{ background-position:-264px -648px; }
+.p72{ background-position:-288px -648px; }
+.p73{ background-position:-312px -648px; }
+.p74{ background-position:-336px -648px; }
+.p75{ background-position:-360px -648px; }
+.p76{ background-position:-24px -672px; }
+.p77{ background-position:-48px -672px; }
+.p78{ background-position:-72px -672px; }
+.p79{ background-position:-96px -672px; }
+.p80{ background-position:-120px -672px; }
+.p81{ background-position:-144px -672px; }
+.p82{ background-position:-168px -672px; }
+.p83{ background-position:-192px -672px; }
+.p84{ background-position:-216px -672px; }
+.p85{ background-position:-240px -672px; }
+.p86{ background-position:-264px -672px; }
+.p87{ background-position:-288px -672px; }
+.p88{ background-position:-312px -672px; }
+.p89{ background-position:-336px -672px; }
+.p90{ background-position:-360px -672px; }
+.p91{ background-position:-24px -696px; }
+.p92{ background-position:-48px -696px; }
+.p93{ background-position:-72px -696px; }
+.p94{ background-position:-96px -696px; }
+.p95{ background-position:-120px -696px; }
+.p96{ background-position:-144px -696px; }
+.p97{ background-position:-168px -696px; }
+.p98{ background-position:-192px -696px; }
+.p99{ background-position:-216px -696px; }
+.p100{ background-position:-240px -696px; }
+.p101{ background-position:-264px -696px; }
+.p102{ background-position:-288px -696px; }
+.p103{ background-position:-312px -696px; }
+.p104{ background-position:-336px -696px; }
+.p105{ background-position:-360px -696px; }
+.p106{ background-position:-24px -720px; }
+.p107{ background-position:-48px -720px; }
+.p108{ background-position:-72px -720px; }
+.p109{ background-position:-96px -720px; }
+.p110{ background-position:-120px -720px; }
+.p111{ background-position:-144px -720px; }
+.p112{ background-position:-168px -720px; }
+.p113{ background-position:-192px -720px; }
+.p114{ background-position:-216px -720px; }
+.p115{ background-position:-240px -720px; }
+.p116{ background-position:-264px -720px; }
+.p117{ background-position:-288px -720px; }
+.p118{ background-position:-312px -720px; }
+.p119{ background-position:-336px -720px; }
+.p120{ background-position:-360px -720px; }
+.p121{ background-position:-24px -744px; }
+.p122{ background-position:-48px -744px; }
+.p123{ background-position:-72px -744px; }
+.p124{ background-position:-96px -744px; }
+.p125{ background-position:-120px -744px; }
+.p126{ background-position:-144px -744px; }
+.p127{ background-position:-168px -744px; }
+.p128{ background-position:-192px -744px; }
+.p129{ background-position:-216px -744px; }
+.p130{ background-position:-240px -744px; }
+.p131{ background-position:-264px -744px; }
+.p132{ background-position:-288px -744px; }
+.p133{ background-position:-312px -744px; }
+.p134{ background-position:-336px -744px; }
+.p135{ background-position:-360px -744px; }
+.p136{ background-position:-0px -768px; }
+.p137{ background-position:-24px -768px; }
