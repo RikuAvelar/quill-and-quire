@@ -1,4 +1,4 @@
-dungeon-desktop Version 0.1
+quill-and-quire Version 0.1
 ===============
 Description
 ---------------
